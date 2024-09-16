@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\SampleLogo\\1_C_logo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\SampleLogo\\1_C_logo.jpg"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\SampleLogo\\2_B_logo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\SampleLogo\\2_B_logo.jpg"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\SampleLogo\\3_A_logo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\SampleLogo\\3_A_logo.jpg"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\SampleLogo\\4_H_logo.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\SampleLogo\\4_H_logo.jpeg"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\logos\\0f86b2b5-e9f7-477d-b130-12d4484dcc99.jpg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\0f86b2b5-e9f7-477d-b130-12d4484dcc99.jpg"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\logos\\3c66515b-74b2-4086-86c7-ebfab259d12d.png",
+      "PackagePath": "staticwebassets\\uploads\\logos\\3c66515b-74b2-4086-86c7-ebfab259d12d.png"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\logos\\69a96b5a-729b-49c4-bb35-62432bd77e6d.png",
+      "PackagePath": "staticwebassets\\uploads\\logos\\69a96b5a-729b-49c4-bb35-62432bd77e6d.png"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\logos\\7e7e5b5b-b076-4703-82b5-9a89c406d935.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\logos\\7e7e5b5b-b076-4703-82b5-9a89c406d935.jpeg"
+    },
+    {
+      "Id": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\wwwroot\\uploads\\logos\\9296c466-a0aa-44c7-a406-93e2e50b5fbe.png",
+      "PackagePath": "staticwebassets\\uploads\\logos\\9296c466-a0aa-44c7-a406-93e2e50b5fbe.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CafeManager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CafeManager.props",
+      "PackagePath": "build\\CafeManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CafeManager.props",
+      "PackagePath": "buildMultiTargeting\\CafeManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CafeManager.props",
+      "PackagePath": "buildTransitive\\CafeManager.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

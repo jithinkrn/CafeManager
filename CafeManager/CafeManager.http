@@ -1,0 +1,83 @@
+@CafeManager_HostAddress = http://localhost:5148
+
+### Get All Cafes
+GET {{CafeManager_HostAddress}}/api/cafes
+Accept: application/json
+
+### Get Cafes by Location (e.g., Tanjong Pagar)
+GET {{CafeManager_HostAddress}}/api/cafes?location=Tanjong%20Pagar
+Accept: application/json
+
+### Get Cafes by Location (e.g., Orchard Road)
+GET {{CafeManager_HostAddress}}/api/cafes?location=Orchard%20Road
+Accept: application/json
+
+### Test invalid location (expecting empty list)
+GET {{CafeManager_HostAddress}}/api/cafes?location=InvalidLocation
+Accept: application/json
+
+### Get All Employees (sorted by days worked)
+GET {{CafeManager_HostAddress}}/api/employees
+Accept: application/json
+
+
+### Get Employees by Cafe (e.g., Brew & Co.)
+GET {{CafeManager_HostAddress}}/api/employees?cafe=Brew%20%26%20Co.
+Accept: application/json
+
+### Test invalid cafe (expecting empty list)
+GET {{CafeManager_HostAddress}}/api/employees?cafe=InvalidCafe
+Accept: application/json
+
+### Create a New Employee (POST request)
+POST {{CafeManager_HostAddress}}/api/employees
+Content-Type: application/json
+
+{
+    "name": "Sarah Tann",
+    "email_address": "sarah.lee@example.com",
+    "phone_number": "91234570",
+    "gender": "Female",
+    "start_date": "2021-01-01T00:00:00Z",
+    "cafe_id": null
+}
+### Update an Existing Employee (PUT request - with Id in the body)
+PUT {{CafeManager_HostAddress}}/api/employees
+Content-Type: application/json
+
+{
+    "id": "UIZVA5IPL",
+    "name": "Steffy Tan",
+    "email_address": "steffy.tan@example.com",
+    "phone_number": "91234571",
+    "gender": "Female",
+    "start_date": "2021-01-01T00:00:00Z",
+    "cafe_id": null
+}
+### Deleting a Cafe
+DELETE {{CafeManager_HostAddress}}/api/cafes
+Content-Type: application/json
+
+{
+    "id": "1f4998e9-53a3-4219-a39c-e7fbadec66d1",
+    "name": "cozycorner2",
+    "description": "A good Cafe",
+    "location": "City Hall",
+    "logo": "https://example.com/cozycorner2_logo.png",
+    "employees": 2
+}
+
+
+### Deleting an Employee
+DELETE {{CafeManager_HostAddress}}/api/employees
+Content-Type: application/json
+
+{
+    "id": "UIZVA5IPL",
+    "name": "Steffy Tan",
+    "email_address": "steffy.tan@example.com",
+    "phone_number": "91234571",
+    "days_worked": 739141,
+    "gender": "Female",
+    "cafe": ""
+  }

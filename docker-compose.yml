@@ -1,0 +1,43 @@
+services:
+  # MySQL Database Service
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: cafe_manager # It will create the database as well.
+    ports:
+      - "3307:3306" # Expose MySQL port
+    volumes:
+      - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d # Mount directory with the SQL dump
+    networks:
+      - cafemanager-network
+
+  # API Service
+  cafemanager-api:
+    build:
+      context: ./CafeManager
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Server=mysql;Database=cafe_manager;User=root;Password=password;
+    networks:
+      - cafemanager-network
+
+  # Frontend Service
+  cafemanager-frontend:
+    build:
+      context: ./cafe-manager
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_URL_CAFES=http://cafemanager-api/api/cafes
+      - REACT_APP_API_URL_EMPLOYEES=http://cafemanager-api/api/employees
+    depends_on:
+      - cafemanager-api
+    networks:
+      - cafemanager-network
+
+networks:
+  cafemanager-network:
+    driver: bridge
