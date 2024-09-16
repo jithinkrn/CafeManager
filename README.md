@@ -32,7 +32,6 @@ Before running the application, ensure that you have the following installed:
 ## Project Structure
 
 .
-
 ├── CafeManager/               # ASP.NET Core Web API backend
 ├── cafe-manager/              # React.js frontend
 ├── docker-compose.yml         # Docker Compose file
