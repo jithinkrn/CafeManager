@@ -29,12 +29,23 @@ Before running the application, ensure that you have the following installed:
 - **Docker**: [Get Docker](https://www.docker.com/get-started)
 - **Docker Compose**: Comes pre-installed with Docker Desktop
 
+## Project Structure
+
+.
+├── CafeManager/               # ASP.NET Core Web API backend
+├── cafe-manager/              # React.js frontend
+├── docker-compose.yml         # Docker Compose file
+├── README.md                  # This file
+└── docker-entrypoint-initdb.d/ # MySQL initialization files (if any)
+
+## Running the Application
+
 ### 1. Clone the Repository
 
 git clone https://github.com/your-username/cafe-manager.git
 cd cafe-manager
 
-2. Build and Run the Application Using Docker
+### 2. Build and Run the Application Using Docker
 Run the following command to build and start the entire application (API, frontend, and MySQL database):
 
 docker-compose up --build
@@ -50,17 +61,17 @@ Frontend: Accessible at http://localhost:8080
 Backend API: Accessible at http://localhost:5000/api/cafes (via Docker internal networking)
 MySQL Database: Runs in the background, accessible from the API.
 
-3. Access the Application
+### 3. Access the Application
 Frontend: Open your browser and navigate to http://localhost:8080.
 API (Backend): You can interact with the API via tools like Postman or curl at http://localhost:5000/api.
 
-4. Stopping the Application
+### 4. Stopping the Application
 To stop the running containers, press CTRL+C in the terminal where Docker Compose is running. Alternatively, you can stop the containers using:
 
 docker-compose down
 This command will stop and remove the containers but keep the images intact.
 
-5. Additional Commands
+### 5. Additional Commands
 Rebuild the Containers: If you make changes to the code or Docker setup, use this command to rebuild:
 
 docker-compose up --build
@@ -70,7 +81,7 @@ Check Running Containers:
 docker ps
 
 
-Satabase Access
+Database Access
 The MySQL database is exposed internally via Docker. You can connect to it using the following credentials:
 
 Host: mysql
@@ -82,12 +93,3 @@ Password: password
 If you need to interact with the database directly, you can access the MySQL container:
 
 docker exec -it <mysql-container-id> mysql -u root -p
-
-6. Project Structure
-
-.
-├── CafeManager/               # ASP.NET Core Web API backend
-├── cafe-manager/              # React.js frontend
-├── docker-compose.yml         # Docker Compose file
-├── README.md                  # This file
-└── docker-entrypoint-initdb.d/ # MySQL initialization files (if any)
