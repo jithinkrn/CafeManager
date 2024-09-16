@@ -32,11 +32,16 @@ Before running the application, ensure that you have the following installed:
 ## Project Structure
 
 .
-├── CafeManager/               # ASP.NET Core Web API backend
-├── cafe-manager/              # React.js frontend
-├── docker-compose.yml         # Docker Compose file
-├── README.md                  # This file
-└── docker-entrypoint-initdb.d/ # MySQL initialization files (if any)
+
+\__CafeManager/               # ASP.NET Core Web API backend
+
+\__cafe-manager/              # React.js frontend
+
+\__ docker-compose.yml         # Docker Compose file
+
+\__README.md                  # This file
+
+\__docker-entrypoint-initdb.d/ # MySQL initialization files (if any)
 
 ## Running the Application
 
