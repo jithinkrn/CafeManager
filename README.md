@@ -41,7 +41,7 @@ Before running the application, ensure that you have the following installed:
 
 \__README.md                  # This file
 
-\__docker-entrypoint-initdb.d/ # MySQL initialization files (if any)
+\__docker-entrypoint-initdb.d/ # MySQL initialization files
 
 ## Running the Application
 
