@@ -48,6 +48,7 @@ Before running the application, ensure that you have the following installed:
 ### 1. Clone the Repository
 
 git clone https://github.com/your-username/cafe-manager.git
+
 cd cafe-manager
 
 ### 2. Build and Run the Application Using Docker
