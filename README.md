@@ -19,7 +19,7 @@ CafeManager is a full-stack web application designed to help manage cafes and th
 
 - **Frontend**: React.js
 - **Backend**: ASP.NET Core 8.0 Web API
-- **Database**: MySQL 8.4
+- **Database**: MySQL 8.4.2
 - **Containerization**: Docker and Docker Compose
 
 ## Prerequisites
