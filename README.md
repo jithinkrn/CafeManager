@@ -49,7 +49,7 @@ Before running the application, ensure that you have the following installed:
 
 git clone https://github.com/jithinkrn/CafeManager.git
 
-cd cafe-manager
+cd CafeManager
 
 ### 2. Build and Run the Application Using Docker
 Run the following command to build and start the entire application (API, frontend, and MySQL database):
