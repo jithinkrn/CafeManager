@@ -63,6 +63,7 @@ Start the application in separate containers.
 The services will start as follows:
 
 Frontend: Accessible at http://localhost:3000
+Backend run at http://localhost:5000 (You may not be able to directlly assess it in the bowser, butaccessible from the Fronend container
 MySQL Database: Runs in the background, accessible from the API.
 
 ### 3. Access the Application
@@ -84,14 +85,10 @@ Check Running Containers:
 docker ps
 
 Database Access
-The MySQL database is exposed internally via Docker. You can connect to it using the following credentials:
+The MySQL database is exposed internally via Docker. You can connect to it using the following credentials if you wish:
 
 Host: localhost
 Port: 3307
 Database: cafe_manager
 Username: root
 Password: password
-
-If you need to interact with the database directly, you can access the MySQL container:
-
-docker exec -it <mysql-container-id> mysql -u root -p
