@@ -41,7 +41,7 @@ Before running the application, ensure that you have the following installed:
 
 \__README.md                  # This file
 
-\__docker-entrypoint-initdb.d/ # MySQL initialization files
+\__docker-entrypoint-initdb.d/ # MySQL initialization files (with Seed Data)
 
 ## Running the Application
 
@@ -62,13 +62,11 @@ Set up a MySQL container.
 Start the application in separate containers.
 The services will start as follows:
 
-Frontend: Accessible at http://localhost:8080
-Backend API: Accessible at http://localhost:5000/api/cafes (via Docker internal networking)
+Frontend: Accessible at http://localhost:3000
 MySQL Database: Runs in the background, accessible from the API.
 
 ### 3. Access the Application
-Frontend: Open your browser and navigate to http://localhost:8080.
-API (Backend): You can interact with the API via tools like Postman or curl at http://localhost:5000/api.
+Open your browser and navigate to http://localhost:3000
 
 ### 4. Stopping the Application
 To stop the running containers, press CTRL+C in the terminal where Docker Compose is running. Alternatively, you can stop the containers using:
@@ -85,12 +83,11 @@ Check Running Containers:
 
 docker ps
 
-
 Database Access
 The MySQL database is exposed internally via Docker. You can connect to it using the following credentials:
 
-Host: mysql
-Port: 3306
+Host: localhost
+Port: 3307
 Database: cafe_manager
 Username: root
 Password: password
