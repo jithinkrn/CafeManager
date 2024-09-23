@@ -13,7 +13,7 @@ COPY ["CafeManager.csproj", "./"]
 RUN dotnet restore
 
 # Copy the remaining source code and build the application
-COPY . .
+COPY . . 
 WORKDIR "/src/"
 RUN dotnet build -c Release -o /app/build
 
@@ -24,5 +24,12 @@ RUN dotnet publish -c Release -o /app/publish
 # Use the base runtime image to run the application
 FROM base AS final
 WORKDIR /app
+
+# Copy the published application from the publish stage
 COPY --from=publish /app/publish .
+
+# Copy the wwwroot folder including images
+COPY ./wwwroot /app/wwwroot
+
+# Set the entry point for the application
 ENTRYPOINT ["dotnet", "CafeManager.dll"]

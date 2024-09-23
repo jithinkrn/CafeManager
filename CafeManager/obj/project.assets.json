@@ -2861,11 +2861,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\CafeManager.csproj",
+      "projectUniqueName": "C:\\Jithin_Interview_Test_Projects\\Submission\\CafeManager\\CafeManager\\CafeManager.csproj",
       "projectName": "CafeManager",
-      "projectPath": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\CafeManager.csproj",
+      "projectPath": "C:\\Jithin_Interview_Test_Projects\\Submission\\CafeManager\\CafeManager\\CafeManager.csproj",
       "packagesPath": "C:\\Users\\JITHIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Jithin_Interview_Test_Projects\\CafeManager\\CafeManager\\obj\\",
+      "outputPath": "C:\\Jithin_Interview_Test_Projects\\Submission\\CafeManager\\CafeManager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

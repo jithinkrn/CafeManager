@@ -1,13 +1,8 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
 
-// // Determine the API URL based on the environment
-// const API_URL = process.env.NODE_ENV === 'production'
-//   ? 'http://localhost:5000/api/cafes'  // Production API URL (using port 5000)
-//   : 'http://localhost:5148/api/cafes';  // Development API URL (use the current backend port)
-
-// Use the environment variable REACT_APP_API_URL
-const API_URL = process.env.REACT_APP_API_URL_CAFES;
+// const API_URL ='http://localhost:5148/api/cafes';
+const API_URL = 'http://localhost:5000/api/cafes';
   
 
 // Fetch Cafes with optional location filtering

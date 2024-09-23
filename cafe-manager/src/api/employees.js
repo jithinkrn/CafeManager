@@ -1,8 +1,8 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import axios from 'axios';
 
-// Use the environment variable REACT_APP_API_URL
-const API_URL = process.env.REACT_APP_API_URL_EMPLOYEES;
+// const API_URL ='http://localhost:5148/api/employees';
+const API_URL = 'http://localhost:5000/api/employees';
 
 // Fetch Employees with optional café filtering
 export const useGetEmployees = (cafe = '') => {

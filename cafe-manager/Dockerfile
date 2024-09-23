@@ -6,9 +6,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-# Set environment variable for production
-ENV NODE_ENV=production
-
 # Copy the rest of the app and build
 COPY . ./
 RUN npm run build
