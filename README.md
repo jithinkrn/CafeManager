@@ -61,14 +61,13 @@ This will:
 Build the frontend and backend Docker images.
 Set up a MySQL container.
 Start the application in separate containers.
-The services will start as follows:
-
-Frontend: Accessible at http://localhost:3000
-Backend run at http://localhost:5000 (You may not be able to directlly assess it in the bowser, butaccessible from the Fronend container
-MySQL Database: Runs in the background, accessible from the API.
+The frontend backend and database services will start
 
 ### 3. Access the Application
+
 Open your browser and navigate to http://localhost:3000
+
+Fyi, Backend run at http://localhost:5000 (You may not be able to directlly assess it in the bowser, but the Fronend container will be able make api call to it. MySQL Database: Runs in the background, accessible from the API.
 
 ### 4. Stopping the Application
 To stop the running containers, press CTRL+C in the terminal where Docker Compose is running. Alternatively, you can stop the containers using:
