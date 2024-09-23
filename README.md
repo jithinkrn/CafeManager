@@ -47,7 +47,7 @@ Before running the application, ensure that you have the following installed:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/cafe-manager.git
+git clone https://github.com/jithinkrn/CafeManager.git
 
 cd cafe-manager
 
